@@ -14,7 +14,6 @@ class ListItem extends Component {
 
   render() {
     const { item } = this.props;
-
     return (
       <Card title={item.date} >
 
