@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import BackButton from './back-button';
 import NextButton from './next-button';
+import PrevButton from './prev-button';
 class Header extends Component {
 
   static propTypes = {
@@ -8,11 +9,11 @@ class Header extends Component {
   }
 
   render() {
-  	console.info("yo", this.props.id)
     return (
       <div>
           <BackButton />
           <NextButton id={this.props.id}/>
+          <PrevButton id={this.props.id}/>
       </div>
     );
   }

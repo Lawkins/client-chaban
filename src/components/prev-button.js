@@ -3,7 +3,7 @@ import { Link} from 'react-router-dom';
 import { Button } from 'react-materialize';
 import { Icon } from 'react-materialize';
 
-class NextButton extends Component {
+class PrevButton extends Component {
 
   
 
@@ -14,10 +14,10 @@ class NextButton extends Component {
          <Button 
                       waves='light' 
                       node='a' 
-                      href={`${data + 1}`}
+                      href={`${data - 1}`}
                     >
-                      <Icon right>keyboard_arrow_right</Icon> 
-                      Suivant
+                      <Icon right>keyboard_arrow_left</Icon> 
+                      Précedent
         </Button>
       </div>
     );
@@ -25,4 +25,4 @@ class NextButton extends Component {
 
 }
 
-export default NextButton;
+export default PrevButton;

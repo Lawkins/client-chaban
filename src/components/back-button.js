@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
-import { Link} from 'react-router-dom'
+import { Link} from 'react-router-dom';
+import { Button } from 'react-materialize';
+import { Icon } from 'react-materialize';
+
 
 class BackButton extends Component {
 
@@ -8,15 +11,15 @@ class BackButton extends Component {
   render() {
     return (
       <div>
-      	<button>
-      	 <Link
-          to={`/`}
-        >
-         Retour
-        </Link>
 
-
-      	</button>
+        <Button 
+          waves='light' 
+          node='a' 
+          href={`/`}
+                    >
+          <Icon right>keyboard_arrow_left</Icon> 
+          Retour à l'accueil
+        </Button>
       </div>
     );
   }
